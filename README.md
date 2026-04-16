@@ -115,15 +115,17 @@ curl -X POST http://localhost:8080/api/v1/cobrancas/TXN-001/validate \\
 """
 
 # ========== MAIN CLASS ==========
-files["src/main/java/com/jeduardo/ticketing/billing/BillingApplication.java"] = """\
+files["src/main/java/com/jeduardo/ticketing/billing/TicketingBillingApplication.java"] = """\
 package com.jeduardo.ticketing.billing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BillingApplication {
-public static void main(String[] args) {
-SpringApplication.run(BillingApplication.class, args);
-}
+public class TicketingBillingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TicketingBillingApplication.class, args);
+	}
+
 }
